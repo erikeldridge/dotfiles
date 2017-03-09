@@ -10,6 +10,10 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" search
+set incsearch
+set hlsearch
+
 " tabs to spaces
 filetype plugin indent on
 set tabstop=2
