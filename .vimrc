@@ -19,16 +19,20 @@ set expandtab
 " split windows
 set splitbelow
 set splitright
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " escape
 inoremap jj <ESC>
 
-" ag plugin
+" ack
 let g:ackprg = "ag --vimgrep"
 
 " leader
 let mapleader = ","
 nnoremap <leader>a :Ack<Space>
 nnoremap <leader>f :FZF<CR>
-nnoremap <leader>l :vsp .<CR>
+nnoremap <leader>l :sp .<CR>
 
