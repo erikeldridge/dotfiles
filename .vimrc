@@ -38,5 +38,5 @@ let g:ackprg = "ag --nogroup --nocolor --column"
 let mapleader = ","
 nnoremap <leader>a :Ack<Space>
 nnoremap <leader>f :FZF<CR>
-nnoremap <leader>l :sp %:p:h<CR> " explore dir for current buffer
+nnoremap <leader>b :ls<CR>:b<Space> " buffer quickpick
 
