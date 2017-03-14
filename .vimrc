@@ -32,7 +32,7 @@ nnoremap <C-l> <C-w>l
 inoremap jj <ESC>
 
 " ack
-let g:ackprg = "ag --vimgrep"
+let g:ackprg = "ag --nogroup --nocolor --column"
 
 " leader
 let mapleader = ","
