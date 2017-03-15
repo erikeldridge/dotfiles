@@ -4,6 +4,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mileszs/ack.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'tpope/vim-vinegar' " :bwipe to exit vinegar
+Plug 'mtth/scratch.vim'
 call plug#end()
 
 " syntax highlighting
@@ -40,3 +41,4 @@ let mapleader = ","
 nnoremap <leader>a :Ack<Space>
 nnoremap <leader>f :FZF<CR>
 nnoremap <leader>b :ls<CR>:b<Space>
+nnoremap <leader>s :Scratch<CR>
