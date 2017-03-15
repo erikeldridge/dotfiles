@@ -3,6 +3,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'
 Plug 'mileszs/ack.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'tpope/vim-vinegar'
 call plug#end()
 
 " syntax highlighting
@@ -38,5 +39,4 @@ let g:ackprg = "ag --nogroup --nocolor --column"
 let mapleader = ","
 nnoremap <leader>a :Ack<Space>
 nnoremap <leader>f :FZF<CR>
-nnoremap <leader>b :ls<CR>:b<Space> " buffer quickpick
-
+nnoremap <leader>b :bwipe<CR> " exit vinegar buffer
