@@ -4,6 +4,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'mileszs/ack.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'mtth/scratch.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'othree/html5.vim'
 call plug#end()
 
 " syntax highlighting
@@ -34,6 +36,10 @@ inoremap jj <ESC>
 
 " ack
 let g:ackprg = "ag --nogroup --nocolor --column"
+
+" ctrlp
+let g:ctrlp_cmd = 'CtrlPBuffer'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " leader
 let mapleader = ","
