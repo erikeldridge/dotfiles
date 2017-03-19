@@ -1,11 +1,11 @@
 call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'
-Plug 'mileszs/ack.vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-Plug 'mtth/scratch.vim'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'othree/html5.vim'
+Plug 'mileszs/ack.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ervandew/supertab'
+Plug 'mtth/scratch.vim'
 call plug#end()
 
 " syntax highlighting
