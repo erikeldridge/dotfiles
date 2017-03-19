@@ -44,8 +44,6 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 " leader
 let mapleader = ","
 nnoremap <leader>a :Ack<Space>
-nnoremap <leader>f :FZF<CR>
-nnoremap <leader>b :ls<CR>:b<Space>
 nnoremap <leader>s :Scratch<CR>
 nnoremap <leader>+ :res +10<CR>
 nnoremap <leader>- :res -10<CR>
