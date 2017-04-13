@@ -7,6 +7,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/supertab'
 Plug 'mtth/scratch.vim'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'MattesGroeger/vim-bookmarks'
 call plug#end()
 
 " syntax highlighting
