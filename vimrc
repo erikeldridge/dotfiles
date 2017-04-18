@@ -42,6 +42,7 @@ let g:ackprg = "ag --nogroup --nocolor --column"
 " ctrlp
 let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_working_path_mode = 0
 
 " leader
 let mapleader = ","
