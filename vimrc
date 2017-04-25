@@ -29,10 +29,14 @@ set expandtab
 " split windows
 set splitbelow
 set splitright
+
+" navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+let g:hardtime_default_on = 1
+set number " support direct nav to line
 
 " escape
 inoremap jj <ESC>
