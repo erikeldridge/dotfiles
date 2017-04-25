@@ -8,6 +8,7 @@ Plug 'ervandew/supertab'
 Plug 'mtth/scratch.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'MattesGroeger/vim-bookmarks'
+Plug 'takac/vim-hardtime'
 call plug#end()
 
 " syntax highlighting
