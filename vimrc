@@ -19,6 +19,7 @@ colorscheme solarized
 " search
 set incsearch
 set hlsearch
+set scrolloff=5
 
 " tabs to spaces
 filetype plugin indent on
