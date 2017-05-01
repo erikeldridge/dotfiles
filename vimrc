@@ -1,3 +1,4 @@
+" === plugins ===
 call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'
@@ -11,6 +12,22 @@ Plug 'MattesGroeger/vim-bookmarks'
 Plug 'takac/vim-hardtime'
 call plug#end()
 
+" === functions ===
+" credit: http://vim.wikia.com/wiki/Jumping_to_previously_visited_locations#Using_a_script_to_select_a_jump_in_the_list
+function! GotoJump()
+  jumps
+  let j = input("Please select your jump: ")
+  if j != ''
+    let pattern = '\v\c^\+'
+    if j =~ pattern
+      let j = substitute(j, pattern, '', 'g')
+      execute "normal " . j . "\<c-i>"
+    else
+      execute "normal " . j . "\<c-o>"
+    endif
+  endif
+endfunction
+ 
 " syntax highlighting
 syntax enable
 set background=dark
@@ -31,7 +48,7 @@ set expandtab
 set splitbelow
 set splitright
 
-" navigation
+" === navigation ===
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -54,6 +71,7 @@ let g:ctrlp_working_path_mode = 0
 " leader
 let mapleader = ","
 nnoremap <leader>a :Ack<Space>
+nmap <Leader>j :call GotoJump()<CR>
 nnoremap <leader>s :Scratch<CR>
 nnoremap <leader>+ :res +10<CR>
 nnoremap <leader>- :res -10<CR>
