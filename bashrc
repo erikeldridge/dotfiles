@@ -1,6 +1,9 @@
 # prompt
 export PS1="\w \\$ \[$(tput sgr0)\]"
 
+# navigation
+set -o vi # enable vi mode
+
 # tmux
 # credit https://www.sitepoint.com/10-killer-tmux-tips/
 # https://rhnh.net/2011/08/20/vim-and-tmux-on-osx/
