@@ -10,6 +10,7 @@ Plug 'mtth/scratch.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'takac/vim-hardtime'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 " === functions ===
