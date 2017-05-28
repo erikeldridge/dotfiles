@@ -53,6 +53,9 @@ let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_working_path_mode = 0
 
+" scratch
+let g:scratch_height = 0.5
+
 " leader
 let mapleader = ","
 nnoremap <leader>a :Ack<Space>
