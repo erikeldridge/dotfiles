@@ -1,4 +1,4 @@
-" === plugins ===
+" plugins
 call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'
@@ -13,7 +13,7 @@ Plug 'takac/vim-hardtime'
 Plug 'leafgarland/typescript-vim'
 call plug#end()
 
-" === functions ===
+" functions
 " credit: http://vim.wikia.com/wiki/Jumping_to_previously_visited_locations#Using_a_script_to_select_a_jump_in_the_list
 function! GotoJump()
   jumps
@@ -33,6 +33,7 @@ endfunction
 syntax enable
 set background=dark
 colorscheme solarized
+highlight clear SignColumn
 
 " search
 set incsearch
@@ -49,7 +50,7 @@ set expandtab
 set splitbelow
 set splitright
 
-" === navigation ===
+" navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
