@@ -8,7 +8,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/supertab'
 Plug 'mtth/scratch.vim'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'MattesGroeger/vim-bookmarks'
 Plug 'takac/vim-hardtime'
 Plug 'leafgarland/typescript-vim'
 call plug#end()
@@ -28,12 +27,11 @@ function! GotoJump()
     endif
   endif
 endfunction
- 
+
 " syntax highlighting
 syntax enable
 set background=dark
 colorscheme solarized
-highlight clear SignColumn
 
 " search
 set incsearch
@@ -65,13 +63,6 @@ inoremap jj <ESC>
 " ack
 let g:ackprg = "ag --nogroup --nocolor --column"
 
-" === bookmarks ===
-" avoid conflict w default 'ma' behavior
-let g:bookmark_no_default_key_mappings = 1
-nmap <Leader>m <Plug>BookmarkToggle
-" stay consistent w solarized
-highlight clear SignColumn
-
 " ctrlp
 let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
@@ -81,6 +72,7 @@ let g:ctrlp_working_path_mode = 0
 let mapleader = ","
 nnoremap <leader>a :Ack<Space>
 nmap <Leader>j :call GotoJump()<CR>
+nmap <Leader>m :marks<CR>
 nnoremap <leader>s :Scratch<CR>
 nnoremap <leader>+ :res +10<CR>
 nnoremap <leader>- :res -10<CR>
