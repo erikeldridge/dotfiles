@@ -65,6 +65,13 @@ inoremap jj <ESC>
 " ack
 let g:ackprg = "ag --nogroup --nocolor --column"
 
+" === bookmarks ===
+" avoid conflict w default 'ma' behavior
+let g:bookmark_no_default_key_mappings = 1
+nmap <Leader>m <Plug>BookmarkToggle
+" stay consistent w solarized
+highlight clear SignColumn
+
 " ctrlp
 let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
