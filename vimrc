@@ -18,6 +18,7 @@ syntax enable
 set background=dark
 colorscheme solarized
 highlight clear SignColumn
+autocmd BufNewFile,BufRead *.soy set syntax=html
 
 " search
 set incsearch
