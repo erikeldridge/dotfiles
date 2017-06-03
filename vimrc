@@ -63,6 +63,7 @@ let mapleader = ","
 nnoremap <leader>a :Ack<Space>
 nmap <Leader>j :jumps<CR>
 nmap <Leader>m :marks<CR>
+set pastetoggle=<leader>p
 nnoremap <leader>s :Scratch<CR>
 nnoremap <leader>+ :res +10<CR>
 nnoremap <leader>- :res -10<CR>
