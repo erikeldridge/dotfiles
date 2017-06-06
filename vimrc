@@ -1,6 +1,5 @@
 " plugins
 call plug#begin('~/.vim/plugged')
-Plug 'MattesGroeger/vim-bookmarks'
 Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'
 Plug 'othree/html5.vim'
