@@ -12,6 +12,19 @@ Plug 'takac/vim-hardtime'
 Plug 'leafgarland/typescript-vim'
 call plug#end()
 
+" inspiration: https://jeffkreeftmeijer.com/2012/relative-line-numbers-in-vim-for-super-fast-movement/
+function! NumberToggle()
+  if(&number == 0 && &relativenumber == 0)
+    set relativenumber
+  elseif(&number == 0 && &relativenumber == 1)
+    set norelativenumber
+    set number
+  else
+    set norelativenumber
+    set nonumber
+  endif
+endfunc
+
 " syntax highlighting
 syntax enable
 set background=dark
@@ -62,6 +75,7 @@ let mapleader = ","
 nnoremap <leader>a :Ack<Space>
 nmap <Leader>j :jumps<CR>
 nmap <Leader>m :marks<CR>
+nnoremap <leader>n :call NumberToggle()<CR>
 set pastetoggle=<leader>p
 nnoremap <leader>s :Scratch<CR>
 nnoremap <leader>+ :res +10<CR>
