@@ -1,14 +1,14 @@
 " plugins
 call plug#begin('~/.vim/plugged')
-Plug 'altercation/vim-colors-solarized'
-Plug 'pangloss/vim-javascript'
-Plug 'othree/html5.vim'
-Plug 'mileszs/ack.vim'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'ervandew/supertab'
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'takac/vim-hardtime'
-Plug 'leafgarland/typescript-vim'
+Plug 'altercation/vim-colors-solarized' " theme
+Plug 'pangloss/vim-javascript' " syntax
+Plug 'othree/html5.vim' " syntax
+Plug 'mileszs/ack.vim' " search
+Plug 'ctrlpvim/ctrlp.vim' " productivity
+Plug 'ervandew/supertab' " tab complete
+Plug 'ntpeters/vim-better-whitespace' " strip space
+Plug 'takac/vim-hardtime' " good habits
+Plug 'leafgarland/typescript-vim' " syntax
 call plug#end()
 
 " inspiration: https://jeffkreeftmeijer.com/2012/relative-line-numbers-in-vim-for-super-fast-movement/
@@ -69,9 +69,5 @@ let g:ctrlp_working_path_mode = 0
 " leader
 let mapleader = ","
 nnoremap <leader>a :Ack<Space>
-nmap <Leader>j :jumps<CR>
-nmap <Leader>m :marks<CR>
 nnoremap <leader>n :call NumberToggle()<CR>
 set pastetoggle=<leader>p
-nnoremap <leader>+ :res +10<CR>
-nnoremap <leader>- :res -10<CR>
