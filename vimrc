@@ -6,7 +6,6 @@ Plug 'othree/html5.vim'
 Plug 'mileszs/ack.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/supertab'
-Plug 'mtth/scratch.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'takac/vim-hardtime'
 Plug 'leafgarland/typescript-vim'
@@ -67,9 +66,6 @@ let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:ctrlp_custom_ignore = 'node_modules\|\.DS_Store$\|\.git$'
 let g:ctrlp_working_path_mode = 0
 
-" scratch
-let g:scratch_height = 0.5
-
 " leader
 let mapleader = ","
 nnoremap <leader>a :Ack<Space>
@@ -77,6 +73,5 @@ nmap <Leader>j :jumps<CR>
 nmap <Leader>m :marks<CR>
 nnoremap <leader>n :call NumberToggle()<CR>
 set pastetoggle=<leader>p
-nnoremap <leader>s :Scratch<CR>
 nnoremap <leader>+ :res +10<CR>
 nnoremap <leader>- :res -10<CR>
