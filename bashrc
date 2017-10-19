@@ -2,9 +2,6 @@
 export HISTTIMEFORMAT="%h %d %H:%M:%S> "
 export HISTCONTROL=ignoredups:erasedups
 
-# navigation
-set -o vi # enable vi mode
-
 # prompt
 export PS1="\w \\$ \[$(tput sgr0)\]"
 
