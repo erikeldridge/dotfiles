@@ -1,6 +1,5 @@
 " plugins
 call plug#begin('~/.vim/plugged')
-Plug 'altercation/vim-colors-solarized' " theme
 Plug 'pangloss/vim-javascript' " syntax
 Plug 'othree/html5.vim' " syntax
 Plug 'mileszs/ack.vim' " search
@@ -26,8 +25,6 @@ endfunc
 
 " syntax highlighting
 syntax enable
-set background=dark
-colorscheme solarized
 highlight clear SignColumn
 autocmd BufNewFile,BufRead *.soy set syntax=html
 
