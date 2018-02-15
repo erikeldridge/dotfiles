@@ -1,2 +1,5 @@
-# Use vi key bindings
+# Use vi key bindings, eg "?" to search in scrollback
 set-window-option -g mode-keys vi
+
+# Show pane ids for 3 seconds
+set -g display-panes-time 3000
