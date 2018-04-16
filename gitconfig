@@ -4,5 +4,7 @@
     st = status
 [core]
     editor = vim 
+[push]
+    default = simple # only push current branch
 [user]                                                                                                                                                                    
     name = Erik Eldridge
