@@ -1,5 +1,8 @@
 [alias]
-        ci = commit
-        st = status
+    ci = commit
+    co = checkout
+    st = status
 [core]
-        editor = vim
+    editor = vim 
+[user]                                                                                                                                                                    
+    name = Erik Eldridge
