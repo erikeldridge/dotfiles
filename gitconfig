@@ -6,5 +6,6 @@
     editor = vim 
 [push]
     default = simple # only push current branch
-[user]                                                                                                                                                                    
+[user]
     name = Erik Eldridge
+    #email = ""
