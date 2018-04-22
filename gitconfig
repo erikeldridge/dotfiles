@@ -3,7 +3,8 @@
     co = checkout
     st = status
 [core]
-    editor = vim 
+    editor = vim
+    excludesfile = ~/.gitignore
 [push]
     default = simple # only push current branch
 [user]
