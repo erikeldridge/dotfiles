@@ -1,0 +1,4 @@
+# Note: ~/.gitconfig must reference this file for it to have an effect.
+
+# vim
+*.swp
