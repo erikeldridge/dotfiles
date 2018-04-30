@@ -28,6 +28,11 @@ syntax enable
 highlight clear SignColumn
 autocmd BufNewFile,BufRead *.soy set syntax=html
 
+" code format
+" setup: `sudo apt-get install yapf`
+" usage: gg=G
+au FileType python setlocal equalprg=yapf
+
 " search
 set incsearch
 set hlsearch
