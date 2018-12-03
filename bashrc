@@ -1,2 +1,2 @@
 # tmux
-alias tmux='tmux attach -t base || tmux new -s base'
+alias tmux='tmux attach -dt base || tmux new -s base'
