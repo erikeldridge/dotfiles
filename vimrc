@@ -1,4 +1,5 @@
 " plugins
+" (Requires installation of https://github.com/junegunn/vim-plug.)
 call plug#begin('~/.vim/plugged')
 Plug 'pangloss/vim-javascript' " syntax
 Plug 'othree/html5.vim' " syntax
@@ -73,5 +74,3 @@ let mapleader = ","
 nnoremap <leader>a :Ack<Space>
 nnoremap <leader>n :call NumberToggle()<CR>
 set pastetoggle=<leader>p
-
-"
