@@ -1,6 +1,9 @@
 [alias]
+    ca = ci --amend
     ci = commit
     co = checkout
+    cp = cherry-pick
+    lo = log --oneline
     st = status
 [core]
     editor = vim
